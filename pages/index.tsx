@@ -5,6 +5,9 @@ import layoutStyles from "../styles/Layout.module.css";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 
+const isProd = process.env.NODE_ENV === 'production';
+const staticURL = (url : String) => `${isProd ? '/portfolio' : ''}${url}`;
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -30,17 +33,17 @@ const Home: NextPage = () => {
             </p>
             <img
               className={styles.displayIcon}
-              src="/React-icon.svg"
+              src={staticURL("/React-icon.svg")}
               alt="React"
             />
             <img
               className={styles.displayIcon}
-              src="/Gatsby-Monogram.svg"
+              src={staticURL("/Gatsby-Monogram.svg")}
               alt="Gatsby"
             />
             <img
               className={styles.displayIcon}
-              src="/Nextjs-logo.svg"
+              src={staticURL("/Nextjs-logo.svg")}
               alt="Next.js"
             />
           </div>
