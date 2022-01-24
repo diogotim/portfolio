@@ -1,0 +1,11 @@
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header ul li {
+  padding: 1rem;
+}

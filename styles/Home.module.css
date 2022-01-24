@@ -1,0 +1,156 @@
+.main {
+  min-height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 85vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .mainContainer {
+    flex-direction: row;
+  }
+}
+
+.mainContainer div {
+  flex: 1;
+}
+
+.name {
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.bio {
+  text-align: center;
+}
+
+.desc {
+  text-align: center;
+  font-size: 1.33rem;
+}
+
+.br {
+  background: rgb(27, 191, 54);
+  background: linear-gradient(
+    73deg,
+    rgba(27, 191, 54, 1) 0%,
+    rgba(255, 205, 0, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+.displayIcon {
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  animation: floating 6s linear 0.2s infinite;
+}
+
+.hire {
+  display: block;
+  background: rgb(27, 171, 191);
+  background: linear-gradient(
+    73deg,
+    rgba(27, 171, 191, 1) 0%,
+    rgba(0, 116, 255, 1) 100%
+  );
+  width: 7rem;
+  height: 2.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: "Prata", serif;
+  box-shadow: 1px 1px 10px 0px #0f73efd1;
+}
+
+.edu {
+  background: var(--contrast-bg);
+  min-height: 10vh;
+}
+
+.edu > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .edu > div {
+    flex-direction: row;
+  }
+}
+
+.card {
+  background: var(--main-bg);
+  display: inline-block;
+  min-width: 16rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+  box-shadow: 6px 6px 0px 0px #880afb;
+  color: var(--text);
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+.card span {
+  vertical-align: middle;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.card svg {
+  margin-right: 1rem;
+}
+
+.card p {
+  color: rgb(68, 68, 68);
+  margin: 0;
+}
+
+.about {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #d5e9fd;
+  border: 3px solid black;
+  box-shadow: 6px 6px 0px 0px #880afb;
+}
+
+.footer {
+  text-align: center;
+  background: var(--contrast-bg);
+  color: var(--contrast-text);
+  min-height: 40vh;
+  padding: 2rem;
+}
