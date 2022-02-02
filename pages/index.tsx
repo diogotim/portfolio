@@ -88,6 +88,25 @@ const Home: NextPage = () => {
             basics of Deno, and much more.
           </p>
         </div>
+        <div className={`${styles.code} ${layoutStyles.container}`} id="code">
+          <h2>Check the code</h2>
+          <p>
+            Take a look at my <a target="_blank" rel="noreferrer noopener" href="https://github.com/diogotim/">Github</a> to check some of my code.
+          </p>
+          <h3>
+            Petshop
+          </h3>
+          <p>
+          I&apos;ve made backend and frontend code for a fictional Petshop while practicing Fastify.
+          </p>
+          <p>
+            Code: <a href="https://github.com/diogotim/petshop-backend" rel="noreferrer noopener" target="_blank">backend</a> and <a href="https://github.com/diogotim/petshop" rel="noreferrer noopener" target="_blank">frontend</a>
+          </p>
+          <p>
+            Live app: <a href="https://diogotim-petshop.netlify.app/"rel="noreferrer noopener" target="_blank">https://diogotim-petshop.netlify.app/</a>
+          </p>
+          <img className={styles.petImg} src="https://raw.githubusercontent.com/diogotim/petshop/main/images/screenshot.png" width={2} height={1}></img>
+        </div>
       </main>
 
       <footer className={styles.footer}>
